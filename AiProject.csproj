@@ -89,11 +89,15 @@
     <Compile Include="Assets\Scripts\Flocking.cs" />
     <Compile Include="Assets\Scripts\Interpolate.cs" />
     <Compile Include="Assets\Scripts\MissleAI - Copy.cs" />
+    <Compile Include="Assets\Scripts\OffsetPursuit.cs" />
     <Compile Include="Assets\Scripts\Pursuit.cs" />
     <Compile Include="Assets\Scripts\RandFlee.cs" />
     <Compile Include="Assets\Scripts\SeekBehaviour.cs" />
     <Compile Include="Assets\Scripts\WallAvoid.cs" />
     <Compile Include="Assets\Scripts\Wander.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ProjectSettings\ProjectVersion.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
