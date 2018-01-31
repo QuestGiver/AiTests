@@ -16,16 +16,22 @@ public class SeekBehaviour : MonoBehaviour
 
 
     // Use this for initialization
-    void Start()
-    {
-       myRig = GetComponent<Rigidbody>();
-    }
+    //void Start()
+    //{
+       //myRig = GetComponent<Rigidbody>();
+    //}
 
     // Update is called once per frame
-    void Update()
-    {
-        desiredVel = speed * (target.position - transform.position).normalized;
+    //void Update()
+    //{
+        //desiredVel = speed * (target.position - transform.position).normalized;
 
-        myRig.AddForce((desiredVel - myRig.velocity) * Time.deltaTime);
+        //myRig.AddForce((desiredVel - myRig.velocity) * Time.deltaTime);
+    //}
+
+    public Vector3 returnFleeVector()
+    {
+        return (target.position - transform.position);
     }
+
 }
